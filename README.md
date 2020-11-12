@@ -25,3 +25,6 @@ Contact schema
 
 Server should run on http://localhost:8080/
 
+### Deployed endpoint
+
+https://cs3219-taskb-backend.herokuapp.com/
