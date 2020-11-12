@@ -2,10 +2,10 @@ let mysql = require('mysql');
 
 let pool  = mysql.createPool({
   connectionLimit : 10,
-  host            : 'localhost',
-  user            : 'root',
-  password        : 'root',
-  database        : 'cs3219taskb'
+  host            : process.env.dbURL || 'localhost',
+  user            : process.env.dbUser || 'root',
+  password        : process.env.dbPass || 'root',
+  database        : process.env.dbName || 'cs3219taskb'
 });
 
 pool.query(`CREATE TABLE IF NOT EXISTS contacts (
