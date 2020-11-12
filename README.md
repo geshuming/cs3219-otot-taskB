@@ -19,6 +19,10 @@ Contact schema
 
 ### Running the API locally
 
+Requirements:
+  - Node 12.18.0
+  - MySQL 5.7
+
 1. cd to backend folder: `cd backend`
 2. Install required dependencies: `npm install`
 3. Run the server: `node index.js`
