@@ -5,7 +5,8 @@ let pool  = mysql.createPool({
   host            : process.env.dbURL || 'localhost',
   user            : process.env.dbUser || 'root',
   password        : process.env.dbPass || 'root',
-  database        : process.env.dbName || 'cs3219taskb'
+  database        : process.env.dbName || 'cs3219taskb',
+  port            : process.env.dbPort || 3306
 });
 
 pool.query(`CREATE TABLE IF NOT EXISTS contacts (
