@@ -19,3 +19,5 @@ app.use('/api', apiRoutes)
 app.listen(port, function () {
      console.log("Running cs3219taskb on port " + port);
 });
+
+module.exports = app;
