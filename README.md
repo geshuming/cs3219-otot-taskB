@@ -25,7 +25,8 @@ Requirements:
 
 1. cd to backend folder: `cd backend`
 2. Install required dependencies: `npm install`
-3. Run the server: `node index.js`
+3. Create a MySQL database and configure the connection configuration accordingly in `database.js`
+4. Run the server: `npm run start`
 
 Server should run on http://localhost:8080/
 
