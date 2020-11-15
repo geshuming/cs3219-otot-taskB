@@ -17,9 +17,13 @@ app.get('/', (req, res) => res.send('Hello World with Express'));
 app.use('/api', apiRoutes)
 
 // Launch app to listen to specified port
-app.listen(port, function () {
-     console.log("Running cs3219taskb on port " + port);
-});
+try {
+  app.listen(port, function () {
+      console.log("Running cs3219taskb on port " + port);
+  });
+} catch (e) {
+  console.error(e);
+}
 
 module.exports = app;
 
