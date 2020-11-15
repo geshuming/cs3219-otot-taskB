@@ -1,6 +1,7 @@
 let express = require('express');
 let bodyParser = require('body-parser');
 let apiRoutes = require('./routes/route');
+const serverless = require('serverless-http');
 
 let app = express();
 
@@ -21,3 +22,5 @@ app.listen(port, function () {
 });
 
 module.exports = app;
+
+module.exports.handler = serverless(app)
