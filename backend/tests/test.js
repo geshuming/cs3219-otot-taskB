@@ -2,7 +2,7 @@ let chai = require('chai');
 let chaiHttp = require('chai-http');
 
 let pool = require('../database');
-let app = require('../index');
+let { app } = require('../index');
 
 chai.use(chaiHttp);
 chai.should();

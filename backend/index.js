@@ -1,7 +1,6 @@
 let express = require('express');
 let bodyParser = require('body-parser');
 let apiRoutes = require('./routes/route');
-const serverless = require('serverless-http');
 
 let app = express();
 
@@ -21,6 +20,6 @@ app.use('/api', apiRoutes)
 //      console.log("Running cs3219taskb on port " + port);
 // });
 
-module.exports = app;
-
-module.exports.handler = serverless(app)
+module.exports = {
+  app
+};
