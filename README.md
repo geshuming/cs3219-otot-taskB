@@ -1,6 +1,6 @@
 # CS3219 OTOT Assignment Task B
 
-## Task B1
+## Task B
 
 API supports the following methods for contacts:
   - GET /api/contacts
@@ -30,6 +30,11 @@ Requirements:
 
 Server should run on http://localhost:8080/
 
-### Deployed endpoint
+### Deployed endpoints
 
-https://cs3219-taskb-backend.herokuapp.com/
+Frontend
+Heroku website: https://cs3219-otot-frontend.herokuapp.com/
+
+Backend
+Heroku website: https://cs3219-taskb-backend.herokuapp.com/
+Google Cloud Functions (serverless deployment): https://asia-southeast2-cs3219-otot.cloudfunctions.net/web 
