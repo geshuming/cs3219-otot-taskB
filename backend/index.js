@@ -6,6 +6,8 @@ let app = express();
 
 let port = process.env.PORT || 8080;
 
+app.use(require('cors')());
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
